@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixed Selectors</title>
+    <style>
+      * {
+        /* margin: 0; */
+      }
+      /* p {
+        color: red;
+      } */
+
+      #fifth,
+      li {
+        font-size: 26px;
+      }
+
+      .holud,
+      .yellow {
+        background-color: yellow;
+      }
+
+      .bold {
+        font-weight: 800;
+      }
+
+      /* input {
+        color: red;
+      } */
+
+      .blog {
+        background-color: aquamarine;
+      }
+      input[type="password"] {
+        color: red;
+      }
+
+      .cyan {
+        color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Explore mixed selectors</h3>
+    <p>My first <span class="cyan">line CSS</span></p>
+    <p class="yellow">My second line CSS</p>
+    <p>My third line CSS</p>
+    <p class="yellow bold">My fourth line CSS</p>
+    <p class="holud" id="fifth">My fifth line CSS</p>
+    <p class="bold">My sixth line CSS</p>
+    <p>My seventh line CSS</p>
+
+    <ol>
+      <li>Element Selector</li>
+      <li>Id Selector</li>
+      <li class="bold holud">Class Selector</li>
+      <li>Universal Selector</li>
+    </ol>
+
+    <div class="blog">
+      <h3>My Blog</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quisquam
+        repellat laborum officiis mollitia laudantium, dignissimos expedita
+        reprehenderit aspernatur ad eius velit accusamus dolorum necessitatibus
+        quam cumque maxime est iusto. Odio consequuntur suscipit repudiandae
+        blanditiis, odit reprehenderit nesciunt eius delectus tempore, nulla
+        inventore aut? Blanditiis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+        perferendis aliquid aut accusantium odio at obcaecati officiis earum id
+        culpa nam rem. Excepturi, laboriosam tenetur.
+      </p>
+    </div>
+    <form action="">
+      <input type="text" />
+      <input type="password" name="" id="" />
+    </form>
+  </body>
+</html>
