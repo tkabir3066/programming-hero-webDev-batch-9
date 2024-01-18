@@ -1,0 +1,26 @@
+body {
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+.house-container,
+.sea-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* .house-container,
+.sea-container img {
+  width: 100%;
+} */
+.sea-container {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 576px) {
+  .house-container,
+  .sea-container {
+    flex-direction: column;
+  }
+}

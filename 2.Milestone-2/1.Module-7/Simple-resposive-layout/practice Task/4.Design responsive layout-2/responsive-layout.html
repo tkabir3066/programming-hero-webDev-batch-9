@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Responsive Layout</title>
+    <style>
+      body {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .box {
+        display: flex;
+        gap: 15px;
+        padding: 20px;
+      }
+      .box img {
+        width: 70%;
+      }
+      .box button {
+        background-color: blue;
+        color: #fff;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      @media screen and (max-width: 576px) {
+        .box {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="./food2.jpeg" alt="" />
+        <div>
+          <h2>Post Title will be here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id impedit
+            assumenda voluptatibus magni qui consequatur aspernatur, nesciunt
+            accusamus optio delectus at voluptatem tempora veniam odio adipisci
+            eaque quas, quod suscipit? Possimus culpa, cumque dolorum ipsam sed
+            non a doloribus nisi laboriosam, quibusdam quas porro iure explicabo
+            delectus corporis sunt recusandae.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./food1.jpeg" alt="" />
+        <div>
+          <h2>Post Title will be here</h2>
+          <p>
+            Dolores placeat explicabo, recusandae amet saepe doloribus, deserunt
+            laborum consequuntur facere eius aperiam magni voluptates optio
+            perferendis inventore pariatur eos. Doloremque expedita doloribus
+            inventore unde, reiciendis distinctio repellendus assumenda commodi
+            quia nam quo ratione excepturi quod aperiam animi cum nobis odio
+            voluptate quibusdam quos. Ut perferendis doloremque dolore velit
+            architecto!
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
